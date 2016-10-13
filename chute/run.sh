@@ -8,9 +8,7 @@
 # results.  You can do that directly from this bash script or call another
 # program that you write (e.g. in Python).
 while true; do
-    #
-    # NOT IMPLEMENTED
-    #
+    sh "iperf -c iperf.wiscnet.net -i2 > results.txt"
 
     sleep 60
 done
