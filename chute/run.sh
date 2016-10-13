@@ -8,8 +8,8 @@
 # results.  You can do that directly from this bash script or call another
 # program that you write (e.g. in Python).
 while true; do
-    ping iperf.wiscnet.net > /usr/share/nginx/html/results.txt
-    iperf -c iperf.wiscnet.net -i2 >> /usr/share/nginx/html/results.txt
+    iperf -c iperf.wiscnet.net -i2 > /usr/share/nginx/html/results.txt
+    ping iperf.wiscnet.net >> /usr/share/nginx/html/results.txt
 
     sleep 60
 done
