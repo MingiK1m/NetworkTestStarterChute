@@ -8,7 +8,7 @@
 # results.  You can do that directly from this bash script or call another
 # program that you write (e.g. in Python).
 while true; do
-    sh "iperf -c iperf.wiscnet.net -i2 > results.txt"
+    sh "iperf -c iperf.wiscnet.net -i2 > /usr/share/nginx/html/results.txt"
 
     sleep 60
 done
